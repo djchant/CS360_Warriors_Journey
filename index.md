@@ -1,27 +1,15 @@
 ## Welcome to GitHub Pages
 
-### Markdown
+### Title
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The Dynasty That Changed the Game
 
-```markdown
-Syntax highlighted code block
+### Name
 
-# Header 1
-## Header 2
-### Header 3
+Dominnic Chant
 
-- Bulleted
-- List
+### Description
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
- Make a simple website using github pages/heroku/netlify/your own website for the final project. It should be able to host your final project along with d3 visualizations. The website must contain the title of the project, your name, and a description of the project on the website. Include a link to the website in the revised proposal.
+I will be looking at the 5 years of dominance by the Golden State Warriors. I will look at who the crucial players are, the peak this team reached and the records broken. But I will also look at how it this dynasty ended and what kind of legacy its leaving behind. 
 
 
