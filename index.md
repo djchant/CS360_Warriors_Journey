@@ -1,5 +1,3 @@
-## Welcome to GitHub Pages
-
 ### Title
 
 The Dynasty That Changed the Game
