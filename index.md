@@ -12,4 +12,4 @@ I will be looking at the 5 years of dominance by the Golden State Warriors. I wi
 
 ### Alpha Release
 
-https://docs.google.com/document/d/1HoVkt6HOfh_on_CAjbvM21tFxNc5cL8xY68yj0INDB0/edit?usp=sharing
+<a href = "https://docs.google.com/document/d/1HoVkt6HOfh_on_CAjbvM21tFxNc5cL8xY68yj0INDB0/edit?usp=sharing">Alpha Release</a>
