@@ -12,7 +12,8 @@ d3.csv("finance.csv").then(function(data) {
     var svg = d3.select("body")
         .append("svg")
         .attr("width", w)
-        .attr("height", h);
+        .attr("height", h)
+        .attr("transform", "translate(500,500)");
 
     var xScale = d3.scaleLinear()
         .domain([1996, 2013])
@@ -65,7 +66,7 @@ d3.csv("finance.csv").then(function(data) {
         .attr("text-anchor", "middle");
 //title
     title_g.append("text")
-        .text("Sales Tax per Year in California")
+        .text("Sales Tax  Year in California")
         .attr("class", "bigTitle")
         .attr("x", (w + padding) / 2)
         .attr("y", 30);
