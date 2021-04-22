@@ -65,7 +65,7 @@ d3.csv("finance.csv").then(function(data) {
         .attr("text-anchor", "middle");
 //title
     title_g.append("text")
-        .text("Sales Tax per Year in California")
+        .text("Sales Tax per  in California")
         .attr("class", "bigTitle")
         .attr("x", (w + padding) / 2)
         .attr("y", 30);
