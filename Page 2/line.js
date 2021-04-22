@@ -1,5 +1,5 @@
-var w = 1000;
-var h = 700;
+var w = 500;
+var h = 350;
 var padding = 60;
 
 d3.csv("finance.csv").then(function(data) {
