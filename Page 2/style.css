@@ -34,7 +34,7 @@ h1 {
 h1::after {
     content:"...";
     font-size: 500px;
-    color: gold;
+    color: black;
     display: block;
     text-align: center;
     letter-spacing: 5px;
