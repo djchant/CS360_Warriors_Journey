@@ -1,7 +1,7 @@
-﻿Player,3P
-Stephen Curry,5.1
-Klay Thompson,3.5
-Damian Lillard,3.1
-James Harden,2.9
-Kyle Lowry,2.8
-J.J. Redick ,2.7
+﻿Player,3P,3P%,3PA
+Curry,5.1,0.454,11.2
+Thompson,3.5,0.425,8.1
+Lillard,3.1,0.375,8.1
+Harden,2.9,0.359,8
+Lowry,2.8,0.388,7.1
+Redick,2.7,0.475,5.6
