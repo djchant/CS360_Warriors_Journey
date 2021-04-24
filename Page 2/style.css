@@ -1,0 +1,32 @@
+.path {
+    fill: none;
+    stroke: green;
+    stroke-width: 3;
+}
+
+#one {
+	color: red;
+	position: absolute;
+    left: 200px;
+    top: 500px;
+}
+
+#two {
+	color: blue;
+	position: absolute;
+    left: 300px;
+    top: 500px;
+}
+
+img {
+    display: block;
+    margin-right: auto;
+    position: absolute;
+    top: 100px;
+}
+
+h1 {
+    position: absolute;
+    top: 50px;
+    left: 1000px;
+}
