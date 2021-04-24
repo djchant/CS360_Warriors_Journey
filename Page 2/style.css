@@ -30,3 +30,12 @@ h1 {
     top: 50px;
     left: 1000px;
 }
+
+h1::after {
+    content:"...";
+      font-size: 50px;
+      color: gold;
+      display: block;
+      text-align: center;
+      letter-spacing: 5px;
+}
