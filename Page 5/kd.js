@@ -1,12 +1,12 @@
-height = 400
-width = 650
+height = 500
+width = 750
 padding = 60
 
 svg = d3.select('body')
     .append('svg')
     .attr('width', width)
     .attr('height', height)
-    .attr('transform', 'translate(950,450)')
+    .attr('transform', 'translate(745,400)')
 
 d3.csv('kd_graph.csv', function(d) {
     return {
@@ -22,7 +22,7 @@ d3.csv('kd_graph.csv', function(d) {
 
     var yScale = d3.scaleLinear()
         .domain([0.5, 0.7])
-        .range([height - padding, padding])
+        .range([height - padding, padding * 2])
 
     g = svg.append('g')
         .attr('transform', 'translate(100,0)')
@@ -62,19 +62,19 @@ d3.csv('kd_graph.csv', function(d) {
 
     //x axis title
     g.append('text')
-        .text('Points')
-        .attr('x', 160)
+        .text('Points per Game')
+        .attr('x', 170)
         .attr('y', (height - 10))
 
     //y axis title
     g.append('text')
         .text('True Shooting %')
-        .attr('transform', 'translate(-50, 255) rotate(-90)');
+        .attr('transform', 'translate(-50, 335) rotate(-90)');
 
 
 //legend
     legend = svg.append('g')
-        .attr('transform', 'translate(500,' + ((height / 2) - 50) + ')')
+        .attr('transform', 'translate(600,' + (height / 2) + ')')
 
 //legend-dots
     legend.append('circle')
