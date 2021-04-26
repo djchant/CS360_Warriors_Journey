@@ -6,9 +6,12 @@ img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+/*.pic {
 	position: absolute;
 	top: 30;
-}
+}*/
 
 h1,h2 {
 	text-align: center;
