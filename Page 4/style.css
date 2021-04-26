@@ -1,0 +1,23 @@
+.first {
+    position: absolute;
+    top: 130px;
+    left: 200px;
+}
+
+.second {
+    position: absolute;
+    top: 130px;
+    left: 930px;
+}
+
+.first_title {
+    position: absolute;
+    top: 30px;
+    left: 400px;
+}
+
+.second_title {
+    position: absolute;
+    top: 30px;
+    left: 1130px;
+}
