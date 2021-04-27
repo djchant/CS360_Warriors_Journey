@@ -1,0 +1,49 @@
+h1 {
+    position: absolute;
+    top: 50px;
+    left: 705px;
+}
+
+.paschall {
+    position: absolute;
+    top: 150px;
+    left: 80px;
+}
+
+.poole {
+    position: absolute;
+    top: 150px;
+    left: 385px;
+}
+
+.nico {
+    position: absolute;
+    top: 150px;
+    left: 690px;
+}
+
+.wiseman{
+    position: absolute;
+    top: 150px;
+    left: 995px;
+}
+
+.pick {
+    position: absolute;
+    top: 150px;
+    left: 1300px;
+}
+
+p {
+    text-align: center;
+}
+
+.mark {
+    color: white;
+    font-size: 200px;
+    position: absolute;
+    top: -130px;
+    left: 103px;
+}
+
+
