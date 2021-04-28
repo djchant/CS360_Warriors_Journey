@@ -1,0 +1,98 @@
+.graph_title {
+    position: absolute;
+    top: 460px;
+    left: 910px;
+}
+
+.klay_name {
+    position: absolute;
+    top: 130px;
+    left: 140px;
+}
+
+.klay_accolades {
+    text-align: center;
+    position: absolute;
+    top: 260px;
+    left: 120px;
+}
+
+.klay_info {
+    text-align: center;
+    position: absolute;
+    top: 330px;
+    left: 560px;
+}
+
+.klay_img {
+    position: absolute;
+    top: 30px;
+    left: 500px;
+}
+
+
+
+.dray_name {
+    position: absolute;
+    top: 594px;
+    left: 130px;
+}
+
+.dray_accolades {
+    text-align: center;
+    position: absolute;
+    top: 730px;
+    left: 120px;
+}
+
+.dray_info {
+    text-align: center;
+    position: absolute;
+    top: 800px;
+    left: 560px;
+}
+
+.dray_img {
+    position: absolute;
+    top: 500px;
+    left: 500px;
+}
+
+
+
+h2 {
+    font-size: 32px;
+}
+
+h2::after {
+    content:"***";
+    font-size: 30px;
+    color: black;
+    display: block;
+    text-align: center;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 65px;
+    left: 85px;
+}
+
+h1::after {
+    content:"***";
+    font-size: 30px;
+    color: black;
+    display: block;
+    text-align: center;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 65px;
+    left: 75px;
+}
+
+.line {
+    border-bottom: 5px solid #006BB6;
+    width: 300px;
+    position: absolute;
+    top: 460px;
+    left: 600px;
+}
+
