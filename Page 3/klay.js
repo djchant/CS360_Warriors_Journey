@@ -20,11 +20,25 @@ d3.csv('Klay.csv', function(d) {
 
     var yScale = d3.scaleBand()
         .domain(data.map(d => d.players))
-        .range([0, height - 50])
+        .range([35, height - 50])
 
     g = svg.append('g')
         .attr('transform', 'translate(100,0)')
 
+
+    //gridlines
+    g.append('g')
+        .attr('transform', 'translate(0, 350)')
+        .call(d3.axisBottom(xScale)
+            .ticks(6)
+            .tickSize(-315))
+        .call(g => g.select(".domain").remove())
+
+
+    g.selectAll('.tick line').attr('opacity', 0.2)
+
+
+    //circles
     g.selectAll('circle')
         .data(data)
         .enter()
@@ -47,26 +61,10 @@ d3.csv('Klay.csv', function(d) {
             }
         })
 
-    //x axis
-    // g.append('g')
-    //     .call(d3.axisBottom(xScale))
-    //     .attr('transform', 'translate(0,' + (height - 50) + ')')
-
     //y axis
     g.append('g')
         .call(d3.axisLeft(yScale))
         .attr('translate', 'transform(50,0)')
-
-    g.append('g')
-        .attr('transform', 'translate(0, 350)')
-        .call(d3.axisBottom(xScale)
-            .ticks(6)
-            .tickSize(-height))
-        .call(g => g.select(".domain").remove())
-
-
-    g.selectAll('.tick line').attr('opacity', 0.2)
-
 
     //x axis title
     g.append('text')
