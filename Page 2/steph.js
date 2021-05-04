@@ -30,13 +30,20 @@ svg3 = d3.select("svg#mainsvg")
 	.attr("height", height * 2)
 	.attr("width", width + 150);
 
+var div = d3.select("body")
+	.append("div")
+	.attr("class", "tooltip")
+	.style("opacity", 0)
+	.style('visibility', 'hidden');
+
 
 d3.csv('3P.csv', function(d) {
 	return {
 		player: d.Player,
 		threeP: +d['3P'],
 		threePA: +d['3PA'],
-		threePerc: +d['3P%']
+		threePerc: +d['3P%'],
+		team: d.Team
 	}
 }).then(function(data) {
 
@@ -81,7 +88,23 @@ d3.csv('3P.csv', function(d) {
 				return "#BEC0C2";
 			}
 		})
-		.attr('transform', 'translate(100, 50)');
+		.attr('transform', 'translate(100, 50)')
+		.on('mouseover', function() {
+			div.style('visibility','visible')
+		})
+		.on("mousemove", function(event, d) {
+			div.transition()
+				.duration(20)
+				.style("opacity", .9);
+			div.html(d.player + "<br/>"  + d.threeP + '<br/>' + d.team)
+				.style("left", (event.pageX) + "px")
+				.style("top", (event.pageY - 50) + "px");
+		})
+		.on("mouseout", function(d) {
+			div.transition()
+				.duration(500)
+				.style("opacity", 0);
+		});
 
   // add the x Axis
     svg1.append("g")
@@ -149,7 +172,23 @@ d3.csv('3P.csv', function(d) {
 				return "#BEC0C2";
 			}
 		})
-		.attr('transform', 'translate(100, 50)');
+		.attr('transform', 'translate(100, 50)')
+		.on('mouseover', function() {
+			div.style('visibility','visible')
+		})
+		.on("mousemove", function(event, d) {
+			div.transition()
+				.duration(20)
+				.style("opacity", .9);
+			div.html(d.player + "<br/>"  + d.threePA + '<br/>' + d.team)
+				.style("left", (event.pageX - 30) + "px")
+				.style("top", (event.pageY - 50) + "px");
+		})
+		.on("mouseout", function(d) {
+			div.transition()
+				.duration(500)
+				.style("opacity", 0);
+		});
 
 	// add the x Axis
 	svg2.append("g")
@@ -216,7 +255,23 @@ d3.csv('3P.csv', function(d) {
 				return "#BEC0C2";
 			}
 		})
-		.attr('transform', 'translate(100, 50)');
+		.attr('transform', 'translate(100, 50)')
+		.on('mouseover', function() {
+			div.style('visibility','visible')
+		})
+		.on("mousemove", function(event, d) {
+			div.transition()
+				.duration(20)
+				.style("opacity", .9);
+			div.html(d.player + "<br/>"  + d.threePerc + '<br/>' + d.team)
+				.style("left", (event.pageX - 60) + "px")
+				.style("top", (event.pageY - 50) + "px");
+		})
+		.on("mouseout", function(d) {
+			div.transition()
+				.duration(500)
+				.style("opacity", 0);
+		});
 
 	// add the x Axis
 	svg3.append("g")

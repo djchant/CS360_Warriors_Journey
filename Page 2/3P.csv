@@ -1,7 +1,7 @@
-﻿Player,3P,3P%,3PA
-Curry,5.1,0.454,11.2
-Thompson,3.5,0.425,8.1
-Lillard,3.1,0.375,8.1
-Harden,2.9,0.359,8
-Lowry,2.8,0.388,7.1
-Redick,2.7,0.475,5.6
+﻿Player,3P,3P%,3PA,Team
+Curry,5.1,0.454,11.2,Warriors
+Thompson,3.5,0.425,8.1,Warriors
+Lillard,3.1,0.375,8.1,Trail Blazers
+Harden,2.9,0.359,8,Rockets
+Lowry,2.8,0.388,7.1,Raptors
+Redick,2.7,0.475,5.6,Clippers
