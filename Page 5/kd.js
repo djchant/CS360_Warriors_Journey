@@ -8,12 +8,19 @@ svg = d3.select('body')
     .attr('height', height)
     .attr('transform', 'translate(745,400)')
 
+var div = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0)
+    .style('visibility', 'hidden');
+
 d3.csv('kd_graph.csv', function(d) {
     return {
         players: d.Player,
         points: +d['PTS'],
         perc: +d['TS%'],
-        year: +d.Year
+        year: +d.Year,
+        team: d.Team
     }
 }).then(function(data) {
     var xScale = d3.scaleLinear()
@@ -34,22 +41,41 @@ d3.csv('kd_graph.csv', function(d) {
         .attr('cx', d => xScale(d.points))
         .attr('cy', d => yScale(d.perc))
         .attr('r', 5)
+        .attr('stroke', '#3E3C3C')
         // .style('fill', 'red')
         .style('fill', function(d) {
-            if(((d.players == 'Kevin Durant') && (d.year == 2014)) ||
-                (d.players == 'Kevin Durant') && (d.year == 2015)) {
+            if(((d.players == 'Durant') && (d.year == 2014)) ||
+                (d.players == 'Durant') && (d.year == 2015)) {
                 return '#002D62';
-            } else if (d.players == 'Kevin Durant'){
+            } else if (d.players == 'Durant'){
                 return '#F13B0E';
-            } else if (((d.players == 'Stephen Curry') && (d.year == 2014)) ||
-                ((d.players == 'Stephen Curry') && (d.year == 2015))){
+            } else if (((d.players == 'Curry') && (d.year == 2014)) ||
+                ((d.players == 'Curry') && (d.year == 2015))){
                 return '#FFC72C';
-            } else if (d.players == 'Stephen Curry') {
-                return '#006BB6'
+            } else if (d.players == 'Curry') {
+                return '#0784DC'
             } else {
                 return '#9A9594';
             }
         })
+        .on('mouseover', function() {
+            div.style('visibility','visible')
+        })
+        .on("mousemove", function(event, d) {
+            div.transition()
+                .duration(20)
+                .style("opacity", .9);
+            div.html(d.players + '<br/>' + d.team + '<br/>' + d.year + "<br/>"
+                + 'PTS: ' + d.points + '<br/>' + 'TS%: ' + d.perc)
+                .style("left", "1240px")
+                .style("top", (event.pageY - 25) + "px");
+        })
+        .on("mouseout", function(d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0);
+        });
+
 
     //x axis
     g.append('g')
@@ -93,7 +119,7 @@ d3.csv('kd_graph.csv', function(d) {
 
     legend.append('circle')
         .attr('r', 5)
-        .style('fill', '#006BB6')
+        .style('fill', '#0784DC')
         .attr('transform', 'translate(0,45)')
 
     legend.append('circle')

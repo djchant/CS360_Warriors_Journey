@@ -1,61 +1,61 @@
-﻿Player,PTS,TS%,Year
-Russell Westbrook,28.1,0.536,2014
-James Harden,27.4,0.605,2014
-Kevin Durant,25.4,0.633,2014
-LeBron James,25.3,0.577,2014
-Anthony Davis,24.4,0.591,2014
-DeMarcus Cousins,24.1,0.545,2014
-Stephen Curry,23.8,0.638,2014
-LaMarcus Aldridge,23.4,0.528,2014
-Blake Griffin,21.9,0.551,2014
-Kyrie Irving,21.7,0.583,2014
-Klay Thompson,21.7,0.591,2014
-Dwyane Wade,21.5,0.534,2014
-Stephen Curry,30.1,0.669,2015
-James Harden,29,0.598,2015
-Kevin Durant,28.2,0.634,2015
-DeMarcus Cousins,26.9,0.538,2015
-LeBron James,25.3,0.588,2015
-Damian Lillard,25.1,0.56,2015
-Anthony Davis,24.3,0.559,2015
-DeMar DeRozan,23.5,0.55,2015
-Russell Westbrook,23.5,0.554,2015
-Paul George,23.1,0.557,2015
-Isaiah Thomas,22.2,0.562,2015
-Klay Thompson,22.1,0.597,2015
-Russell Westbrook,31.6,0.554,2016
-James Harden,29.1,0.613,2016
-Isaiah Thomas,28.9,0.625,2016
-Anthony Davis,28,0.58,2016
-DeMar DeRozan,27.3,0.552,2016
-DeMarcus Cousins,27,0.562,2016
-Damian Lillard,27,0.586,2016
-LeBron James,26.4,0.619,2016
-Kawhi Leonard,25.5,0.61,2016
-Stephen Curry,25.3,0.624,2016
-Kyrie Irving,25.2,0.58,2016
-Kevin Durant,25.1,0.651,2016
-James Harden,30.4,0.619,2017
-Anthony Davis,28.1,0.612,2017
-LeBron James,27.5,0.621,2017
-Giannis Antetokounmpo,26.9,0.598,2017
-Damian Lillard,26.9,0.594,2017
-Kevin Durant,26.4,0.64,2017
-Stephen Curry,26.4,0.675,2017
-Russell Westbrook,25.4,0.524,2017
-Devin Booker,24.9,0.561,2017
-Kyrie Irving,24.4,0.61,2017
-LaMarcus Aldridge,23.1,0.57,2017
-Victor Oladipo,23.1,0.577,2017
-James Harden,36.1,0.616,2018
-Paul George,28,0.583,2018
-Giannis Antetokounmpo,27.7,0.644,2018
-Joel Embiid,27.5,0.593,2018
-LeBron James,27.4,0.588,2018
-Stephen Curry,27.3,0.641,2018
-Devin Booker,26.6,0.584,2018
-Kawhi Leonard,26.6,0.606,2018
-Kevin Durant,26,0.631,2018
-Anthony Davis,25.9,0.597,2018
-Damian Lillard,25.8,0.588,2018
-Bradley Beal,25.6,0.581,2018
+﻿Player,PTS,TS%,Year,Team
+Westbrook,28.1,0.536,2014,Thunder
+Harden,27.4,0.605,2014,Rockets
+Durant,25.4,0.633,2014,"Thunder, 2014"
+James,25.3,0.577,2014,Cavaliers
+Davis,24.4,0.591,2014,Pelicans
+Cousins,24.1,0.545,2014,Kings
+Curry,23.8,0.638,2014,Warriors
+Aldridge,23.4,0.528,2014,Trail Blazers
+Griffin,21.9,0.551,2014,Clippers
+Irving,21.7,0.583,2014,Cavaliers
+Thompson,21.7,0.591,2014,Warriors
+Wade,21.5,0.534,2014,Heat
+Curry,30.1,0.669,2015,Warriors
+Harden,29,0.598,2015,Rockets
+Durant,28.2,0.634,2015,Thunder
+Cousins,26.9,0.538,2015,Kings
+James,25.3,0.588,2015,Cavaliers
+Lillard,25.1,0.56,2015,Trail Blazers
+Davis,24.3,0.559,2015,Pelicans
+DeRozan,23.5,0.55,2015,Raptors
+Westbrook,23.5,0.554,2015,Thunder
+George,23.1,0.557,2015,Pacers
+Thomas,22.2,0.562,2015,Celtics
+Thompson,22.1,0.597,2015,Warriors
+Westbrook,31.6,0.554,2016,Thunder
+Harden,29.1,0.613,2016,Rockets
+Thomas,28.9,0.625,2016,Celtics
+Davis,28,0.58,2016,Pelicans
+DeRozan,27.3,0.552,2016,Raptors
+Cousins,27,0.562,2016,Kings
+Lillard,27,0.586,2016,Trail Blazers
+James,26.4,0.619,2016,Cavaliers
+Leonard,25.5,0.61,2016,Spurs
+Curry,25.3,0.624,2016,Warriors
+Irving,25.2,0.58,2016,Cavaliers
+Durant,25.1,0.651,2016,Warriors
+Harden,30.4,0.619,2017,Rockets
+Davis,28.1,0.612,2017,Pelicans
+James,27.5,0.621,2017,Cavaliers
+Antetokounmpo,26.9,0.598,2017,Bucks
+Lillard,26.9,0.594,2017,Trail Blazers
+Durant,26.4,0.64,2017,Warriors
+Curry,26.4,0.675,2017,Warriors
+Westbrook,25.4,0.524,2017,Thunder
+Booker,24.9,0.561,2017,Suns
+Irving,24.4,0.61,2017,Celtics
+Aldridge,23.1,0.57,2017,Spurs
+Oladipo,23.1,0.577,2017,Pacers
+Harden,36.1,0.616,2018,Rockets
+George,28,0.583,2018,Thunder
+Antetokounmpo,27.7,0.644,2018,Bucks
+Embiid,27.5,0.593,2018,76ers
+James,27.4,0.588,2018,Lakers
+Curry,27.3,0.641,2018,Warriors
+Booker,26.6,0.584,2018,Suns
+Leonard,26.6,0.606,2018,Raptors
+Durant,26,0.631,2018,Warriors
+Davis,25.9,0.597,2018,Pelicans
+Lillard,25.8,0.588,2018,Trail Blazers
+Beal,25.6,0.581,2018,Wizards
