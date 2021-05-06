@@ -8,10 +8,18 @@ svg = d3.select('body')
     .attr('height', height)
     .attr('transform', 'translate(1100, 30)')
 
+var div = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0)
+    .style('visibility', 'hidden');
+
 d3.csv('Klay.csv', function(d) {
     return {
         players: d.Player,
-        makes: +d['3P']
+        makes: +d['3P'],
+        team: d.Team,
+        date: d.Date
     }
 }).then(function(data) {
     var xScale = d3.scaleLinear()
@@ -60,6 +68,22 @@ d3.csv('Klay.csv', function(d) {
                 return '#552583';
             }
         })
+        .on('mouseover', function() {
+            div.style('visibility','visible')
+        })
+        .on("mousemove", function(event, d) {
+            div.transition()
+                .duration(20)
+                .style("opacity", .9);
+            div.html('Team: ' + d.team + "<br/>"  + "Date: " + d.date)
+                .style("left", (event.pageX + 15) + "px")
+                .style("top", (event.pageY - 50) + "px");
+        })
+        .on("mouseout", function(d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0);
+        });
 
     //y axis
     g.append('g')
@@ -71,73 +95,6 @@ d3.csv('Klay.csv', function(d) {
         .text('Most Number of 3-Pointers in a Game')
         .attr('x', 55)
         .attr('y', (height - 10))
-//
-//     //y axis title
-//     g.append('text')
-//         .text('True Shooting %')
-//         .attr('transform', 'translate(-50, 335) rotate(-90)');
-//
-//
-// //legend
-//     legend = svg.append('g')
-//         .attr('transform', 'translate(600,' + (height / 2) + ')')
-//
-// //legend-dots
-//     legend.append('circle')
-//         .attr('r', 5)
-//         .style('fill', '#002D62')
-//
-//     legend.append('circle')
-//         .attr('r', 5)
-//         .style('fill', '#FFC72C')
-//         .attr('transform', 'translate(0,15)')
-//
-//     legend.append('circle')
-//         .attr('r', 5)
-//         .style('fill', '#F13B0E')
-//         .attr('transform', 'translate(0,30)')
-//
-//     legend.append('circle')
-//         .attr('r', 5)
-//         .style('fill', '#006BB6')
-//         .attr('transform', 'translate(0,45)')
-//
-//     legend.append('circle')
-//         .attr('r', 5)
-//         .style('fill', '#9A9594')
-//         .attr('transform', 'translate(0,60)')
-//
-// //legend-text
-//     legend.append('text')
-//         .text('- Durant on Thunder')
-//         .attr('transform', 'translate(15, 3)')
-//         .style('font-size', 13)
-//
-//     legend.append('text')
-//         .text('- Curry w/o Durant')
-//         .attr('transform', 'translate(15, 18)')
-//         .style('font-size', 13)
-//
-//     legend.append('text')
-//         .text('- Durant on Warriors')
-//         .attr('transform', 'translate(15, 33)')
-//         .style('font-size', 13)
-//
-//     legend.append('text')
-//         .text('- Curry w/ Durant')
-//         .attr('transform', 'translate(15, 48)')
-//         .style('font-size', 13)
-//
-//     legend.append('text')
-//         .text('- Everyone Else')
-//         .attr('transform', 'translate(15, 63)')
-//         .style('font-size', 13)
-//
-// //legend-title
-//     legend.append('text')
-//         .text('Players')
-//         .attr('transform', 'translate(35, -20)')
-//         .attr('text-decoration', 'underline')
-//
+
 
 })

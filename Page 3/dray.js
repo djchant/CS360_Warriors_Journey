@@ -7,6 +7,7 @@ svg1 = d3.select('body')
     .attr('height', height)
     .attr('transform', 'translate(615,500)')
 
+
 d3.csv('Dray.csv', function(d) {
     return {
         season: d.Season,
@@ -48,9 +49,11 @@ d3.csv('Dray.csv', function(d) {
         .attr('d', d3.line()
             .x(d => xScale(d.season))
             .y(d => yScale(d.reb)))
-        .attr('transform', 'translate(25,-30)')
+        .attr('transform', 'translate(25,-30)');
 
 
+
+    //axis and legends
     g.append('g')
         .attr('transform', 'translate(0,' + (height-80) + ')')
         .call(d3.axisBottom(xScale))
