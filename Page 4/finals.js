@@ -28,15 +28,26 @@ svg2 = d3.select("svg#mainsvg")
     .attr("height", height)
     .attr("width", width);
 
+var div = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0)
+    .style('visibility', 'hidden');
+
 d3.csv("regseason.csv", function(d) {
     return {
         date_2015: d['Date_2015'],
         margin_2015: +d['Margin_2015'],
+        opp_2015: d['Opp_2015'],
+        score_2015: d['Score_2015'],
         date_2016: d['Date_2016'],
-        margin_2016: +d['Margin_2016']
+        margin_2016: +d['Margin_2016'],
+        opp_2016: d['Opp_2016'],
+        score_2016: d['Score_2016']
     }
 }).then(function(data) {
 
+//graph 1
 //scales
     var yScale1 = d3.scaleLinear()
         .domain([0, 50])
@@ -60,12 +71,33 @@ d3.csv("regseason.csv", function(d) {
                 return '#006BB6';
             }
         })
-        .attr('transform', 'translate(0,110)');
+        .attr('transform', 'translate(0,110)')
+        .on('mouseover', function() {
+            div.style('visibility','visible')
+        })
+        .on("mousemove", function(event, d) {
+            div.transition()
+                .duration(20)
+                .style("opacity", .9);
 
+            if(d.margin_2015 > 0) {
+                div.html(d.date_2015 + "<br/>"  + d.opp_2015 + '<br/>' + d.score_2015)
+                    .style("left", (event.pageX) + "px")
+                    .style("top", (event.pageY - 50) + "px");
+            } else {
+                div.html(d.date_2015 + "<br/>"  + d.opp_2015 + '<br/>' + d.score_2015)
+                    .style("left", (event.pageX + 10) + "px")
+                    .style("top", (event.pageY + 10) + "px");
+            }
 
+        })
+        .on("mouseout", function(d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0);
+        });
 
-
-
+//graph 2
 //scales
     var yScale2 = d3.scaleLinear()
         .domain([0, 50])
@@ -89,6 +121,30 @@ d3.csv("regseason.csv", function(d) {
                 return '#006BB6';
             }
         })
-        .attr('transform', 'translate(0,110)');
+        .attr('transform', 'translate(0,110)')
+        .on('mouseover', function() {
+            div.style('visibility','visible')
+        })
+        .on("mousemove", function(event, d) {
+            div.transition()
+                .duration(20)
+                .style("opacity", .9);
+
+            if(d.margin_2016 > 0) {
+                div.html(d.date_2016 + "<br/>"  + d.opp_2016 + '<br/>' + d.score_2016)
+                    .style("left", (event.pageX) + "px")
+                    .style("top", (event.pageY - 50) + "px");
+            } else {
+                div.html(d.date_2016 + "<br/>"  + d.opp_2016 + '<br/>' + d.score_2016)
+                    .style("left", (event.pageX + 10) + "px")
+                    .style("top", (event.pageY + 10) + "px");
+            }
+
+        })
+        .on("mouseout", function(d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0);
+        });
 
 })
