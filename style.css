@@ -2,23 +2,32 @@ body {
 	margin: auto;
 }
 
-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
+.main_pic {
+	position: absolute;
+	top: 30px;
+	left: 383px;
 }
 
 
-h1,h2 {
-	text-align: center;
+h1 {
+	position: absolute;
+	top: 550px;
+	left: 575px;
 }
 
-.three-dots {
-	text-align: center;
+h2 {
+	position: absolute;
+	top: 630px;
+	left: 747px;
 }
 
-.three-dots span {
+.three-dots1 {
+	position: absolute;
+	top: 620px;
+	left: 793px;
+}
+
+.three-dots1 span {
 	width: 13px;
 	height: 13px;
 	border-radius: 50%;
@@ -27,9 +36,356 @@ h1,h2 {
     display: inline-block;
 }
 
+span.first {
+	background-color: #FDB927;
+}
+
+span.second {
+	background-color: #006BB6;
+}
+
+.three-dots2 {
+	position: absolute;
+	top: 700px;
+	left: 793px;
+}
+
+.three-dots2 span {
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: black;
+	margin: 0px 5px;
+	display: inline-block;
+}
+
+span.first {
+	background-color: #FDB927;
+}
+
+span.second {
+	background-color: #006BB6;
+}
+
 p {
 	text-align: justify;
 	text-indent: 50px;
-	margin-right: 450px;
-	margin-left: 450px;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 1000px;
+	font-size: 16px;
+}
+
+.story {
+	position: absolute;
+	top: 740px;
+	left: 330px;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+.circular--portrait {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+.circular--portrait img {
+	width: 85%;
+	height: auto;
+}
+
+.circular--landscape {
+	display: inline-block;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+.circular--landscape img {
+	width: auto;
+	height: 100%;
+	margin-top: 0px;
+}
+
+.boston--landscape {
+	display: inline-block;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+.boston--landscape img {
+	width: auto;
+	height: 90%;
+	margin-top: 15px;
+}
+
+.warriors--landscape {
+	display: inline-block;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+.warriors--landscape img {
+	width: auto;
+	height: 130%;
+	margin-top: -30px;
+	margin-left: -30px;
+}
+
+.line1 {
+	border-left: 5px solid black;
+	height: 200px;
+	position: absolute;
+	top: 2200px;
+	left: 665px;
+}
+
+.line2 {
+	border-left: 5px solid black;
+	height: 200px;
+	position: absolute;
+	top: 2200px;
+	left: 985px;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+
+/*lakers*/
+.lakers_img {
+	position: absolute;
+	top: 2200px;
+	left: 126px;
+}
+
+.lakers_trophy {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 2400px;
+	left: 126px;
+}
+
+h1.lakers_count {
+	position: absolute;
+	top: 2430px;
+	left: 230px;
+	font-size: 40px;
+}
+
+.tooltip .tooltiptext_lakers {
+	visibility: hidden;
+	width: 180px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	position: absolute;
+	top: 2550px;
+	left: 140px;
+}
+
+.tooltip:hover .tooltiptext_lakers {
+	visibility: visible;
+}
+
+
+/*celtics*/
+.celtics_img {
+	position: absolute;
+	top: 2200px;
+	left: 407px;
+}
+
+.celtics_trophy{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 2400px;
+	left: 407px;
+}
+
+h1.celtics_count {
+	position: absolute;
+	top: 2430px;
+	left: 511px;
+	font-size: 40px;
+}
+
+.tooltip .tooltiptext_celtics {
+	visibility: hidden;
+	width: 180px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	position: absolute;
+	top: 2550px;
+	left: 420px;
+}
+
+.tooltip:hover .tooltiptext_celtics {
+	visibility: visible;
+}
+
+
+/*warriors*/
+.warriors_img {
+	position: absolute;
+	top: 2200px;
+	left: 728px;
+}
+
+.warriors_trophy{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 2400px;
+	left: 728px;
+}
+
+h1.warriors_count {
+	position: absolute;
+	top: 2430px;
+	left: 847px;
+	font-size: 40px;
+}
+
+.tooltip .tooltiptext_warriors {
+	visibility: hidden;
+	width: 140px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	position: absolute;
+	top: 2550px;
+	left: 755px;
+}
+
+.tooltip:hover .tooltiptext_warriors {
+	visibility: visible;
+}
+
+
+/*bulls*/
+.bulls_img {
+	position: absolute;
+	top: 2200px;
+	left: 1049px;
+}
+
+.bulls_trophy{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 2400px;
+	left: 1049px;
+}
+
+h1.bulls_count {
+	position: absolute;
+	top: 2430px;
+	left: 1168px;
+	font-size: 40px;
+}
+
+.tooltip .tooltiptext_bulls {
+	visibility: hidden;
+	width: 140px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	position: absolute;
+	top: 2550px;
+	left: 1070px;
+}
+
+.tooltip:hover .tooltiptext_bulls {
+	visibility: visible;
+}
+
+/*spurs*/
+.spurs_img {
+	position: absolute;
+	top: 2200px;
+	left: 1331px;
+}
+
+.spurs_trophy{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 2400px;
+	left: 1331px;
+}
+
+h1.spurs_count {
+	position: absolute;
+	top: 2430px;
+	left: 1450px;
+	font-size: 40px;
+}
+
+.tooltip .tooltiptext_spurs {
+	visibility: hidden;
+	width: 140px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	position: absolute;
+	top: 2550px;
+	left: 1350px;
+}
+
+.tooltip:hover .tooltiptext_spurs {
+	visibility: visible;
+}
+
+
+
+
+
+
+
+
+.test {
+	position: absolute;
+	top: 3000px;
+	left: 500px;
 }
