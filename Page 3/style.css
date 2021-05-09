@@ -30,14 +30,6 @@
     left: 500px;
 }
 
-.test {
-    position: absolute;
-    top: 1300px;
-    left: 1500px;
-}
-
-
-
 .dray_name {
     position: absolute;
     top: 594px;
@@ -114,3 +106,87 @@ div.tooltip {
     border-radius: 8px;
     pointer-events: none;
 }
+
+
+.hide {
+    display: none;
+}
+
+.annotate_line1 {
+    transform: rotate(25deg);
+    border-bottom: 3px dashed gray;
+    width: 25px;
+    position: absolute;
+    top: 537px;
+    left: 1280px;
+    opacity: 0.5;
+}
+
+/*style for my visible text*/
+
+.annotate_text1 {
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 505px;
+    left: 1195px;
+    border-radius: 10%;
+    font-size: 12px;
+}
+
+/*style for my hover text*/
+.myDIV1:hover + .hide {
+    display: block;
+    color: #006BB6;
+    position: absolute;
+    top: -45px;
+    left: -5px;
+}
+
+.annotate_line2 {
+    transform: rotate(55deg);
+    border-bottom: 3px dashed gray;
+    width: 25px;
+    position: absolute;
+    top: 635px;
+    left: 1506px;
+    opacity: 0.5;
+}
+
+/*style for my visible text*/
+.annotate_text2 {
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 595px;
+    left: 1425px;
+    border-radius: 10%;
+    font-size: 12px;
+}
+
+/*style for my hover text*/
+.myDIV2:hover + .hide {
+    display: block;
+    color: #006BB6;
+    position: absolute;
+    top: -100px;
+    left: 0px;
+}
+
+.caption_klay {
+    position: absolute;
+    top: 388px;
+    left: 1130px;
+    font-size: 13px;
+}
+
+.caption_dray {
+    position: absolute;
+    top: 858px;
+    left: 1130px;
+    font-size: 13px;
+}
+
+

@@ -5,7 +5,7 @@ svg1 = d3.select('body')
     .append('svg')
     .attr('width', width)
     .attr('height', height)
-    .attr('transform', 'translate(615,500)')
+    .attr('transform', 'translate(615, 460)')
 
 
 d3.csv('Dray.csv', function(d) {
@@ -70,19 +70,19 @@ d3.csv('Dray.csv', function(d) {
     //legend-circles
     g.append('circle')
         .attr('cx', 340)
-        .attr('cy', 30)
+        .attr('cy', 250)
         .attr('r', 5)
         .style('fill', 'black')
 
     g.append('circle')
         .attr('cx', 340)
-        .attr('cy', 45)
+        .attr('cy', 265)
         .attr('r', 5)
         .attr('fill', '#FFC72C')
 
     g.append('circle')
         .attr('cx', 340)
-        .attr('cy', 60)
+        .attr('cy', 280)
         .attr('r', 5)
         .attr('fill', '#006BB6')
 
@@ -90,15 +90,15 @@ d3.csv('Dray.csv', function(d) {
     g.append('text')
         .text('Points')
         .attr('x', 350)
-        .attr('y', 35)
+        .attr('y', 255)
 
     g.append('text')
         .text('Rebounds')
         .attr('x', 350)
-        .attr('y', 50)
+        .attr('y', 270)
 
     g.append('text')
         .text('Assists')
         .attr('x', 350)
-        .attr('y', 65)
+        .attr('y', 285)
 })

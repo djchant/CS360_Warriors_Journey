@@ -6,7 +6,7 @@ svg = d3.select('body')
     .append('svg')
     .attr('width', width)
     .attr('height', height)
-    .attr('transform', 'translate(1100, 30)')
+    .attr('transform', 'translate(1100, -5)')
 
 var div = d3.select("body")
     .append("div")
@@ -95,6 +95,5 @@ d3.csv('Klay.csv', function(d) {
         .text('Most Number of 3-Pointers in a Game')
         .attr('x', 55)
         .attr('y', (height - 10))
-
 
 })
