@@ -6,7 +6,7 @@ svg = d3.select('body')
     .append('svg')
     .attr('width', width)
     .attr('height', height)
-    .attr('transform', 'translate(745,400)')
+    .attr('transform', 'translate(745,380)')
 
 var div = d3.select("body")
     .append("div")
@@ -68,7 +68,7 @@ d3.csv('kd_graph.csv', function(d) {
             div.html(d.players + '<br/>' + d.team + '<br/>' + d.year + "<br/>"
                 + 'PTS: ' + d.points + '<br/>' + 'TS%: ' + d.perc)
                 .style("left", "1240px")
-                .style("top", (event.pageY - 25) + "px");
+                .style("top", (event.pageY - 40) + "px");
         })
         .on("mouseout", function(d) {
             div.transition()

@@ -33,7 +33,7 @@ h2 {
 
 .graph_title {
     position: absolute;
-    top: 460px;
+    top: 440px;
     left: 910px;
 }
 
@@ -53,4 +53,11 @@ div.tooltip {
     border: 0px;
     border-radius: 8px;
     pointer-events: none;
+}
+
+.caption {
+    position: absolute;
+    top: 880px;
+    left: 790px;
+    font-size: 13px;
 }
