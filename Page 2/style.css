@@ -7,8 +7,9 @@ img {
 
 h1 {
     position: absolute;
-    top: 50px;
-    left: 1000px;
+    top: 45px;
+    left: 960px;
+    font-size: 45px;
 }
 
 h1::after {
@@ -19,8 +20,8 @@ h1::after {
     text-align: center;
     letter-spacing: 10px;
     position: absolute;
-    top: 50px;
-    left: 55px;
+    top: 60px;
+    left: 95px;
 }
 
 .info {
@@ -73,8 +74,9 @@ div.tooltip {
     pointer-events: none;
 }
 
-.source {
+.caption {
     position:absolute;
     top: 910px;
-    left: 980px;
+    left: 930px;
+    font-size: 13px;
 }
