@@ -9,7 +9,7 @@ svg = d3.select("body")
     .attr("id", "mainsvg")
     .attr("height", height)
     .attr("width", width)
-    .attr('transform', 'translate(130, 600)');
+    .attr('transform', 'translate(130, 580)');
 
 // creating sub-svg's
 svg1 = d3.select("svg#mainsvg")
