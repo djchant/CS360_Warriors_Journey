@@ -156,7 +156,7 @@ img {
 	border-left: 5px solid black;
 	height: 200px;
 	position: absolute;
-	top: 2200px;
+	top: 2270px;
 	left: 665px;
 }
 
@@ -164,7 +164,7 @@ img {
 	border-left: 5px solid black;
 	height: 200px;
 	position: absolute;
-	top: 2200px;
+	top: 2270px;
 	left: 985px;
 }
 
@@ -177,7 +177,7 @@ img {
 /*lakers*/
 .lakers_img {
 	position: absolute;
-	top: 2200px;
+	top: 2270px;
 	left: 126px;
 }
 
@@ -185,13 +185,13 @@ img {
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	top: 2400px;
+	top: 2470px;
 	left: 126px;
 }
 
 h1.lakers_count {
 	position: absolute;
-	top: 2430px;
+	top: 2500px;
 	left: 230px;
 	font-size: 40px;
 }
@@ -206,7 +206,7 @@ h1.lakers_count {
 	padding: 5px 0;
 
 	position: absolute;
-	top: 2550px;
+	top: 2620px;
 	left: 140px;
 }
 
@@ -218,7 +218,7 @@ h1.lakers_count {
 /*celtics*/
 .celtics_img {
 	position: absolute;
-	top: 2200px;
+	top: 2270px;
 	left: 407px;
 }
 
@@ -226,13 +226,13 @@ h1.lakers_count {
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	top: 2400px;
+	top: 2470px;
 	left: 407px;
 }
 
 h1.celtics_count {
 	position: absolute;
-	top: 2430px;
+	top: 2500px;
 	left: 511px;
 	font-size: 40px;
 }
@@ -247,7 +247,7 @@ h1.celtics_count {
 	padding: 5px 0;
 
 	position: absolute;
-	top: 2550px;
+	top: 2620px;
 	left: 420px;
 }
 
@@ -259,7 +259,7 @@ h1.celtics_count {
 /*warriors*/
 .warriors_img {
 	position: absolute;
-	top: 2200px;
+	top: 2270px;
 	left: 728px;
 }
 
@@ -267,13 +267,13 @@ h1.celtics_count {
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	top: 2400px;
+	top: 2470px;
 	left: 728px;
 }
 
 h1.warriors_count {
 	position: absolute;
-	top: 2430px;
+	top: 2500px;
 	left: 847px;
 	font-size: 40px;
 }
@@ -288,7 +288,7 @@ h1.warriors_count {
 	padding: 5px 0;
 
 	position: absolute;
-	top: 2550px;
+	top: 2620px;
 	left: 755px;
 }
 
@@ -300,7 +300,7 @@ h1.warriors_count {
 /*bulls*/
 .bulls_img {
 	position: absolute;
-	top: 2200px;
+	top: 2270px;
 	left: 1049px;
 }
 
@@ -308,13 +308,13 @@ h1.warriors_count {
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	top: 2400px;
+	top: 2470px;
 	left: 1049px;
 }
 
 h1.bulls_count {
 	position: absolute;
-	top: 2430px;
+	top: 2500px;
 	left: 1168px;
 	font-size: 40px;
 }
@@ -329,7 +329,7 @@ h1.bulls_count {
 	padding: 5px 0;
 
 	position: absolute;
-	top: 2550px;
+	top: 2620px;
 	left: 1070px;
 }
 
@@ -340,7 +340,7 @@ h1.bulls_count {
 /*spurs*/
 .spurs_img {
 	position: absolute;
-	top: 2200px;
+	top: 2270px;
 	left: 1331px;
 }
 
@@ -348,13 +348,13 @@ h1.bulls_count {
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	top: 2400px;
+	top: 2470px;
 	left: 1331px;
 }
 
 h1.spurs_count {
 	position: absolute;
-	top: 2430px;
+	top: 2500px;
 	left: 1450px;
 	font-size: 40px;
 }
@@ -369,7 +369,7 @@ h1.spurs_count {
 	padding: 5px 0;
 
 	position: absolute;
-	top: 2550px;
+	top: 2620px;
 	left: 1350px;
 }
 
@@ -378,14 +378,26 @@ h1.spurs_count {
 }
 
 
+.img_test1 {
+	float: left;
+	width: 400px;
+	height: 266px;
+	margin: 5px 10px 0 0;
+	border-radius: 5%;
+}
 
+.img_test2 {
+	float: right;
+	width: 400px;
+	height: 266px;
+	margin: 5px 0px 0px 10px;
+	border-radius: 5%;
+}
 
-
-
-
-
-.test {
-	position: absolute;
-	top: 3000px;
-	left: 500px;
+.img_test3 {
+	float: left;
+	width: 400px;
+	height: 266px;
+	margin: 5px 10px 0px 0;
+	border-radius: 5%;
 }
