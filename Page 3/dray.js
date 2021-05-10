@@ -16,6 +16,8 @@ d3.csv('Dray.csv', function(d) {
         pts: +d['PTS']
     }
 }).then(function(data) {
+
+    //scales
     var xScale = d3.scaleBand()
         .domain(data.map(d => d.season))
         .range([0, width-100])
@@ -27,6 +29,7 @@ d3.csv('Dray.csv', function(d) {
     g = svg1.append('g')
         .attr('transform', 'translate(20,20)')
 
+    //lines
     g.append('path')
         .datum(data)
         .attr('class', 'pts')
@@ -53,7 +56,7 @@ d3.csv('Dray.csv', function(d) {
 
 
 
-    //axis and legends
+    //axis
     g.append('g')
         .attr('transform', 'translate(0,' + (height-80) + ')')
         .call(d3.axisBottom(xScale))

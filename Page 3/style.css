@@ -1,9 +1,4 @@
-.graph_title {
-    position: absolute;
-    top: 460px;
-    left: 910px;
-}
-
+/*klay*/
 .klay_name {
     position: absolute;
     top: 130px;
@@ -30,6 +25,19 @@
     left: 500px;
 }
 
+h1::after {
+    content:"***";
+    font-size: 30px;
+    color: black;
+    display: block;
+    text-align: center;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 65px;
+    left: 75px;
+}
+
+/*draymond*/
 .dray_name {
     position: absolute;
     top: 594px;
@@ -56,8 +64,6 @@
     left: 500px;
 }
 
-
-
 h2 {
     font-size: 32px;
 }
@@ -74,18 +80,7 @@ h2::after {
     left: 85px;
 }
 
-h1::after {
-    content:"***";
-    font-size: 30px;
-    color: black;
-    display: block;
-    text-align: center;
-    letter-spacing: 10px;
-    position: absolute;
-    top: 65px;
-    left: 75px;
-}
-
+/*line separating the two halves*/
 .line {
     border-bottom: 5px dashed #006BB6;
     width: 700px;
@@ -94,6 +89,7 @@ h1::after {
     left: 395px;
 }
 
+/*tooltip for klay's graph*/
 div.tooltip {
     position: absolute;
     text-align: center;
@@ -107,11 +103,11 @@ div.tooltip {
     pointer-events: none;
 }
 
-
+/*tooltip for draymond*/
 .hide {
     display: none;
 }
-
+/*style for my line*/
 .annotate_line1 {
     transform: rotate(25deg);
     border-bottom: 3px dashed gray;
@@ -123,7 +119,6 @@ div.tooltip {
 }
 
 /*style for my visible text*/
-
 .annotate_text1 {
     width: 120px;
     height: 50px;
@@ -144,6 +139,7 @@ div.tooltip {
     left: -5px;
 }
 
+/*style for my line*/
 .annotate_line2 {
     transform: rotate(55deg);
     border-bottom: 3px dashed gray;
@@ -175,6 +171,7 @@ div.tooltip {
     left: 0px;
 }
 
+/*caption under the graphs*/
 .caption_klay {
     position: absolute;
     top: 388px;
@@ -187,6 +184,25 @@ div.tooltip {
     top: 858px;
     left: 1130px;
     font-size: 13px;
+}
+
+/*style for line graph*/
+.pts {
+    fill: none;
+    stroke: black;
+    stroke-width: 2;
+}
+
+.ast {
+    fill: none;
+    stroke: #006BB6;
+    stroke-width: 2;
+}
+
+.reb {
+    fill: none;
+    stroke: #FFC72C;
+    stroke-width: 2;
 }
 
 

@@ -5,101 +5,86 @@
     <title>Thompson and Green</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .pts {
-            fill: none;
-            stroke: black;
-            stroke-width: 2;
-        }
-
-        .ast {
-            fill: none;
-            stroke: #006BB6;
-            stroke-width: 2;
-        }
-
-        .reb {
-            fill: none;
-            stroke: #FFC72C;
-            stroke-width: 2;
-        }
-
-    </style>
 </head>
 <body>
 
-<h1 class = 'klay_name'>Klay Thompson</h1>
-<img src = "klay.jpeg" alt = "klay" style="width: 500px; height: 280px;" class = 'klay_img'>
+<!--top half of page-->
+    <h1 class = 'klay_name'>Klay Thompson</h1>
+    <img src = "klay.jpeg" alt = "klay" style="width: 500px; height: 280px;" class = 'klay_img'>
 
 
-<div>
-    <script src = "klay.js"></script>
-</div>
+    <div>
+        <script src = "klay.js"></script>
+    </div>
 
 
-<div class = "klay_info">
-    <p><b>Age:</b> 31</p>
-    <p><b>Height:</b> 6'6" &emsp; <b>Position: </b> Shooting Guard</p>
-    <p><b>Draft:</b> 2011 NBA Draft, 1st Round(11th pick, 11th overall)</p>
-</div>
+    <div class = "klay_info">
+        <p><b>Age:</b> 31</p>
+        <p><b>Height:</b> 6'6" &emsp; <b>Position: </b> Shooting Guard</p>
+        <p><b>Draft:</b> 2011 NBA Draft, 1st Round(11th pick, 11th overall)</p>
+    </div>
 
-<div class = 'klay_accolades'>
-    <p>3x NBA Champion</p>
-    <p>5x NBA All-Star</p>
-    <p>2x All-NBA Third Team</p>
-    <p>1x All-NBA Defensive Second Team</p>
-    <p>1x NBA Three-Point Contest Champion</p>
-</div>
+    <div class = 'klay_accolades'>
+        <p>3x NBA Champion</p>
+        <p>5x NBA All-Star</p>
+        <p>2x All-NBA Third Team</p>
+        <p>1x All-NBA Defensive Second Team</p>
+        <p>1x NBA Three-Point Contest Champion</p>
+    </div>
 
-<div class="line"></div>
+    <!---->
+
+    <div class="line"></div>
+
+    <!---->
+
+<!--bottom half of page-->
+    <h2 class = 'dray_name'>Draymond Green</h2>
+    <img src = "dray.jpeg" alt = "dray" style="width: 500px; height: 280px;" class = 'dray_img'>
+
+    <script src = "dray.js"></script>
+
+    <div class = "dray_info">
+        <p><b>Age:</b> 31</p>
+        <p><b>Height:</b> 6'6" &emsp; <b>Position: </b> Power Forward</p>
+        <p><b>Draft:</b> 2012 NBA Draft, 2nd Round(5th pick, 35th overall)</p>
+    </div>
+
+    <div class = 'dray_accolades'>
+        <p>3x NBA Champion</p>
+        <p>3x NBA All-Star</p>
+        <p>1x NBA Defensive Player of the Year</p>
+        <p>3x All-NBA Defensive First Team</p>
+        <p>1x All-NBA Second Team</p>
+    </div>
+
+    <!--annotations-->
+    <div class="annotate_line1"></div>
+
+    <div class = 'annotate_text1'>
+        <p class = 'myDIV1'>Scoring Peak</p>
+        <p class = 'hide'>Before Durant's arrival, the team needed Green to score more.</p>
+    </div>
 
 
-<h2 class = 'dray_name'>Draymond Green</h2>
-<img src = "dray.jpeg" alt = "dray" style="width: 500px; height: 280px;" class = 'dray_img'>
+    <div class="annotate_line2"></div>
 
-<script src = "dray.js"></script>
+    <div class = 'annotate_text2'>
+        <p class = 'myDIV2'>Main Facilitator</p>
+        <p class="hide">
+            As Green's shooting regresses and the team needs change, Green has taken on more of a facilitating role, competing against the top point guards for most number of assists per game.
+        </p>
+    </div>
 
-<div class = "dray_info">
-    <p><b>Age:</b> 31</p>
-    <p><b>Height:</b> 6'6" &emsp; <b>Position: </b> Power Forward</p>
-    <p><b>Draft:</b> 2012 NBA Draft, 2nd Round(5th pick, 35th overall)</p>
-</div>
-
-<div class = 'dray_accolades'>
-    <p>3x NBA Champion</p>
-    <p>3x NBA All-Star</p>
-    <p>1x NBA Defensive Player of the Year</p>
-    <p>3x All-NBA Defensive First Team</p>
-    <p>1x All-NBA Second Team</p>
-</div>
-
-
-<div class="annotate_line1"></div>
-
-<div class = 'annotate_text1'>
-    <p class = 'myDIV1'>Scoring Peak</p>
-    <p class = 'hide'>Before Durant's arrival, the team needed Green to score more.</p>
-</div>
-
-
-<div class="annotate_line2"></div>
-
-<div class = 'annotate_text2'>
-    <p class = 'myDIV2'>Main Facilitator</p>
-    <p class="hide">
-        As Green's shooting regresses and the team needs change, Green has taken on more of a facilitating role, competing against the top point guards for most number of assists per game.
+    <p class = 'caption_klay'>
+        Source: <a href = 'https://www.basketball-reference.com/'>Basketball Reference</a> <br>
+        Note: Hover over the dots!
     </p>
-</div>
 
-<p class = 'caption_klay'>
-    Source: <a href = 'https://www.basketball-reference.com/'>Basketball Reference</a> <br>
-    Note: Hover over the dots!
-</p>
-
-<p class = 'caption_dray'>
-    Source: <a href = 'https://www.basketball-reference.com/'>Basketball Reference</a> <br>
-    Note: Hover over the annotations!
-</p>
+    <p class = 'caption_dray'>
+        Source: <a href = 'https://www.basketball-reference.com/'>Basketball Reference</a> <br>
+        Note: Hover over the annotations!
+    </p>
 
 </body>
 </html>

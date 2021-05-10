@@ -8,6 +8,7 @@ svg = d3.select('body')
     .attr('height', height)
     .attr('transform', 'translate(1100, -5)')
 
+//div for tooltips in dot plot
 var div = d3.select("body")
     .append("div")
     .attr("class", "tooltip")
@@ -22,6 +23,8 @@ d3.csv('Klay.csv', function(d) {
         date: d.Date
     }
 }).then(function(data) {
+
+    //scales
     var xScale = d3.scaleLinear()
         .domain([0, 16])
         .range([0, width - 150])
@@ -33,7 +36,6 @@ d3.csv('Klay.csv', function(d) {
     g = svg.append('g')
         .attr('transform', 'translate(100,0)')
 
-
     //gridlines
     g.append('g')
         .attr('transform', 'translate(0, 350)')
@@ -42,9 +44,7 @@ d3.csv('Klay.csv', function(d) {
             .tickSize(-315))
         .call(g => g.select(".domain").remove())
 
-
     g.selectAll('.tick line').attr('opacity', 0.2)
-
 
     //circles
     g.selectAll('circle')
@@ -53,10 +53,9 @@ d3.csv('Klay.csv', function(d) {
         .append('circle')
         .attr('cx', d => xScale(d.makes))
         .attr('cy', function(d,i) {
-            return (i * (70) + 35);
+            return (i * (63) + 65);
         })
         .attr('r', 8)
-        // .style('fill', 'red');
         .style('fill', function(d) {
             if(d.players == 'Klay Thompson') {
                 return '#006BB6';
