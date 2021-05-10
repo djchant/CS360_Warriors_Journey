@@ -1,3 +1,4 @@
+/*title*/
 h1.a {
     position: absolute;
     top: 360px;
@@ -12,6 +13,15 @@ h1.b {
     font-size: 50px;
 }
 
+/*caption under title*/
+.caption {
+    font-size: 13px;
+    position: absolute;
+    top: 490px;
+    left: 130px;
+}
+
+/*formatting the pictures to be circles*/
 .circular--portrait {
     position: relative;
     width: 200px;
@@ -42,19 +52,22 @@ h1.b {
     margin-left: -40px;
 }
 
+/*spacing for the titles*/
 p.title_spacing {
     word-spacing: 70px;
 }
 
+/*spacing for the stats*/
 p.value_spacing {
     word-spacing: 95px;
 }
 
+/*special spacing for barnes bc he has double digit stats*/
 p.barnes_value_spacing {
     word-spacing: 90px;
 }
 
-
+/*style for interaction*/
 .image {
     width: 100%;
     height: auto;
@@ -67,8 +80,6 @@ p.barnes_value_spacing {
     font-size: 16px;
     padding: 16px 32px;
 }
-
-
 
 /*Livingston*/
 .livingston_years {
@@ -99,6 +110,7 @@ p.barnes_value_spacing {
     left: 500px;
 }
 
+/*style for interaction*/
 .livingston_name {
     transition: .5s ease;
     opacity: 0;
@@ -116,9 +128,6 @@ p.barnes_value_spacing {
 .livingston_container:hover .livingston_name {
     opacity: 0.9;
 }
-
-
-
 
 /*Iguodala*/
 .iggy_years {
@@ -149,6 +158,7 @@ p.barnes_value_spacing {
     left: 900px;
 }
 
+/*style for interaction*/
 .iggy_name {
     transition: .5s ease;
     opacity: 0;
@@ -198,6 +208,7 @@ p.barnes_value_spacing {
     left: 1300px;
 }
 
+/*style for interaction*/
 .looney_name {
     transition: .5s ease;
     opacity: 0;
@@ -247,6 +258,7 @@ p.barnes_value_spacing {
     left: 700px;
 }
 
+/*style for interaction*/
 .bogut_name {
     transition: .5s ease;
     opacity: 0;
@@ -264,7 +276,6 @@ p.barnes_value_spacing {
 .bogut_container:hover .bogut_name {
     opacity: 0.9;
 }
-
 
 
 /*Barnes*/
@@ -296,6 +307,7 @@ p.barnes_value_spacing {
     left: 1100px;
 }
 
+/*style for interaction*/
 .barnes_name {
     transition: .5s ease;
     opacity: 0;
