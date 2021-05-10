@@ -1,13 +1,8 @@
-body {
-	margin: auto;
-}
-
 .main_pic {
 	position: absolute;
 	top: 30px;
 	left: 383px;
 }
-
 
 h1 {
 	position: absolute;
@@ -74,14 +69,18 @@ p {
 	margin-bottom: 0;
 	width: 1000px;
 	font-size: 16px;
+	line-height: 1.6;
 }
 
+/*position of the paragraphs*/
 .story {
 	position: absolute;
 	top: 740px;
 	left: 330px;
 }
 
+
+/*shaping of the team logos at the bottom of the page*/
 img {
 	display: block;
 	margin-left: auto;
@@ -152,11 +151,12 @@ img {
 	margin-left: -30px;
 }
 
+/* the two vertical lines at the bottom of the page*/
 .line1 {
 	border-left: 5px solid black;
 	height: 200px;
 	position: absolute;
-	top: 2270px;
+	top: 2770px;
 	left: 665px;
 }
 
@@ -164,9 +164,11 @@ img {
 	border-left: 5px solid black;
 	height: 200px;
 	position: absolute;
-	top: 2270px;
+	top: 2770px;
 	left: 985px;
 }
+
+
 
 .tooltip {
 	position: relative;
@@ -177,7 +179,7 @@ img {
 /*lakers*/
 .lakers_img {
 	position: absolute;
-	top: 2270px;
+	top: 2770px;
 	left: 126px;
 }
 
@@ -185,13 +187,13 @@ img {
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	top: 2470px;
+	top: 2970px;
 	left: 126px;
 }
 
 h1.lakers_count {
 	position: absolute;
-	top: 2500px;
+	top: 3020px;
 	left: 230px;
 	font-size: 40px;
 }
@@ -206,7 +208,7 @@ h1.lakers_count {
 	padding: 5px 0;
 
 	position: absolute;
-	top: 2620px;
+	top: 3120px;
 	left: 140px;
 }
 
@@ -218,7 +220,7 @@ h1.lakers_count {
 /*celtics*/
 .celtics_img {
 	position: absolute;
-	top: 2270px;
+	top: 2770px;
 	left: 407px;
 }
 
@@ -226,13 +228,13 @@ h1.lakers_count {
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	top: 2470px;
+	top: 2970px;
 	left: 407px;
 }
 
 h1.celtics_count {
 	position: absolute;
-	top: 2500px;
+	top: 3020px;
 	left: 511px;
 	font-size: 40px;
 }
@@ -247,7 +249,7 @@ h1.celtics_count {
 	padding: 5px 0;
 
 	position: absolute;
-	top: 2620px;
+	top: 3120px;
 	left: 420px;
 }
 
@@ -259,7 +261,7 @@ h1.celtics_count {
 /*warriors*/
 .warriors_img {
 	position: absolute;
-	top: 2270px;
+	top: 2770px;
 	left: 728px;
 }
 
@@ -267,13 +269,13 @@ h1.celtics_count {
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	top: 2470px;
+	top: 2970px;
 	left: 728px;
 }
 
 h1.warriors_count {
 	position: absolute;
-	top: 2500px;
+	top: 3020px;
 	left: 847px;
 	font-size: 40px;
 }
@@ -288,7 +290,7 @@ h1.warriors_count {
 	padding: 5px 0;
 
 	position: absolute;
-	top: 2620px;
+	top: 3120px;
 	left: 755px;
 }
 
@@ -300,7 +302,7 @@ h1.warriors_count {
 /*bulls*/
 .bulls_img {
 	position: absolute;
-	top: 2270px;
+	top: 2770px;
 	left: 1049px;
 }
 
@@ -308,13 +310,13 @@ h1.warriors_count {
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	top: 2470px;
+	top: 2970px;
 	left: 1049px;
 }
 
 h1.bulls_count {
 	position: absolute;
-	top: 2500px;
+	top: 3020px;
 	left: 1168px;
 	font-size: 40px;
 }
@@ -329,7 +331,7 @@ h1.bulls_count {
 	padding: 5px 0;
 
 	position: absolute;
-	top: 2620px;
+	top: 3120px;
 	left: 1070px;
 }
 
@@ -340,7 +342,7 @@ h1.bulls_count {
 /*spurs*/
 .spurs_img {
 	position: absolute;
-	top: 2270px;
+	top: 2770px;
 	left: 1331px;
 }
 
@@ -348,13 +350,13 @@ h1.bulls_count {
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	top: 2470px;
+	top: 2970px;
 	left: 1331px;
 }
 
 h1.spurs_count {
 	position: absolute;
-	top: 2500px;
+	top: 3020px;
 	left: 1450px;
 	font-size: 40px;
 }
@@ -369,7 +371,7 @@ h1.spurs_count {
 	padding: 5px 0;
 
 	position: absolute;
-	top: 2620px;
+	top: 3120px;
 	left: 1350px;
 }
 
@@ -378,7 +380,16 @@ h1.spurs_count {
 }
 
 
-.img_test1 {
+/*images within the text*/
+.img1 {
+	float: right;
+	width: 200px;
+	height: 200px;
+	margin: 5px 0px 0px 5px;
+	border-radius: 30%;
+}
+
+.img2 {
 	float: left;
 	width: 400px;
 	height: 266px;
@@ -386,7 +397,7 @@ h1.spurs_count {
 	border-radius: 5%;
 }
 
-.img_test2 {
+.img3 {
 	float: right;
 	width: 398px;
 	height: 266px;
@@ -394,10 +405,18 @@ h1.spurs_count {
 	border-radius: 5%;
 }
 
-.img_test3 {
+.img4 {
 	float: left;
 	width: 400px;
 	height: 266px;
 	margin: 5px 10px 0px 0;
 	border-radius: 5%;
+}
+
+/*caption at the very bottom of the page*/
+.caption {
+	font-size: 13px;
+	position: absolute;
+	top: 2700px;
+	left: 695px;
 }
