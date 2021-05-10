@@ -8,6 +8,7 @@ svg = d3.select('body')
     .attr('height', height)
     .attr('transform', 'translate(745,380)')
 
+//div for tooltips
 var div = d3.select("body")
     .append("div")
     .attr("class", "tooltip")
@@ -23,6 +24,8 @@ d3.csv('kd_graph.csv', function(d) {
         team: d.Team
     }
 }).then(function(data) {
+
+    //scales
     var xScale = d3.scaleLinear()
         .domain([20, 40])
         .range([0, width - (padding * 5)])
@@ -34,6 +37,7 @@ d3.csv('kd_graph.csv', function(d) {
     g = svg.append('g')
         .attr('transform', 'translate(100,0)')
 
+    //circles
     g.selectAll('circle')
         .data(data)
         .enter()
@@ -98,11 +102,17 @@ d3.csv('kd_graph.csv', function(d) {
         .attr('transform', 'translate(-50, 335) rotate(-90)');
 
 
-//legend
+    //legend
     legend = svg.append('g')
         .attr('transform', 'translate(600,' + (height / 2) + ')')
 
-//legend-dots
+    //legend-title
+    legend.append('text')
+        .text('Players')
+        .attr('transform', 'translate(35, -20)')
+        .attr('text-decoration', 'underline')
+
+    //legend-dots
     legend.append('circle')
         .attr('r', 5)
         .style('fill', '#002D62')
@@ -127,7 +137,7 @@ d3.csv('kd_graph.csv', function(d) {
         .style('fill', '#9A9594')
         .attr('transform', 'translate(0,60)')
 
-//legend-text
+    //legend-text
     legend.append('text')
         .text('- Durant on Thunder')
         .attr('transform', 'translate(15, 3)')
@@ -152,12 +162,5 @@ d3.csv('kd_graph.csv', function(d) {
         .text('- Everyone Else')
         .attr('transform', 'translate(15, 63)')
         .style('font-size', 13)
-
-//legend-title
-    legend.append('text')
-        .text('Players')
-        .attr('transform', 'translate(35, -20)')
-        .attr('text-decoration', 'underline')
-
 
 })
