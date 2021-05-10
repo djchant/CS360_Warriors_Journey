@@ -1,3 +1,4 @@
+/*position of images*/
 .first {
     position: absolute;
     top: 130px;
@@ -10,6 +11,7 @@
     left: 930px;
 }
 
+/*position for top title*/
 .first_title {
     position: absolute;
     top: 30px;
@@ -22,6 +24,7 @@
     left: 1085px;
 }
 
+/*position for subtitle*/
 .first_subtitle {
     position: absolute;
     top: 550px;
@@ -34,6 +37,7 @@
     left: 1055px;
 }
 
+/*style for tooltips of each bar*/
 div.tooltip {
     position: absolute;
     text-align: center;
@@ -47,6 +51,7 @@ div.tooltip {
     pointer-events: none;
 }
 
+/*caption at the bottom of the page*/
 .caption {
     position: absolute;
     top: 880px;

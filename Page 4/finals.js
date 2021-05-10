@@ -28,6 +28,7 @@ svg2 = d3.select("svg#mainsvg")
     .attr("height", height)
     .attr("width", width);
 
+//div for tooltips
 var div = d3.select("body")
     .append("div")
     .attr("class", "tooltip")
@@ -48,12 +49,12 @@ d3.csv("regseason.csv", function(d) {
 }).then(function(data) {
 
 //graph 1
-//scales
+    //scales
     var yScale1 = d3.scaleLinear()
         .domain([0, 50])
         .range([0, (height / 1.5) - 10]);
 
-//bars
+    //bars
     svg1.selectAll("rect")
         .data(data)
         .enter()
@@ -98,12 +99,12 @@ d3.csv("regseason.csv", function(d) {
         });
 
 //graph 2
-//scales
+    //scales
     var yScale2 = d3.scaleLinear()
         .domain([0, 50])
         .range([0, (height / 1.5) - 10]);
 
-//bars
+    //bars
     svg2.selectAll("rect")
         .data(data)
         .enter()
@@ -146,5 +147,4 @@ d3.csv("regseason.csv", function(d) {
                 .duration(500)
                 .style("opacity", 0);
         });
-
 })
