@@ -30,6 +30,7 @@ svg3 = d3.select("svg#mainsvg")
 	.attr("height", height * 2)
 	.attr("width", width + 150);
 
+//div for tooltip of bars
 var div = d3.select("body")
 	.append("div")
 	.attr("class", "tooltip")
@@ -296,58 +297,6 @@ d3.csv('3P.csv', function(d) {
 		.attr('y', (height / 2) + 45)
 		.attr('transform', 'translate(-140, 295) rotate(-90)');
 
-
-
-
-
-
-
-//keep for interactives
-	// plot y vs x in first plot
-	// svg1.selectAll("empty")
-	//     .data(data)
-	//     .enter()
-	//     .append("circle")
-	//     .attr("cx", function(d) { return d.x; })
-	//     .attr("cy", function(d) { return height-d.y+10; })
-	//     .attr("class", function(d,i) { return "pt" + i; })
-	//     .attr("r", 5)
-	//     .attr("stroke", "black")
-	//     .attr("fill", "slateblue")
-	//     .on("mouseover", function(d, i) {
-	//         console.log(i)
-	//         d3.selectAll("circle.pt" + i)
-	//           .attr("fill", "Orchid")
-	//           .attr("r", 10)
-	//     })
-	//     .on("mouseout", function(d, i) {
-	//         d3.selectAll("circle.pt" + i)
-	//           .attr("fill", "slateblue")
-	//           .attr("r", 5)
-	//     })
-
-	// plot z vs x in 2nd plot
-	// svg2.selectAll("empty")
-	//     .data(data)
-	//     .enter()
-	//     .append("circle")
-	//     .attr("cx", function(d) { return d.x; })
-	//     .attr("cy", function(d) { return height-d.z+10; })
-	//     .attr("class", function(d,i) { return "pt" + i; })
-	//     .attr("r", 5)
-	//     .attr("stroke", "black")
-	//     .attr("fill", "slateblue")
-	//     .on("mouseover", function(d, i) {
-	//         console.log(i)
-	//         d3.selectAll("circle.pt" + i)
-	//           .attr("fill", "Orchid")
-	//           .attr("r", 10)
-	//     })
-	//     .on("mouseout", function(d, i) {
-	//         d3.selectAll("circle.pt" + i)
-	//           .attr("fill", "slateblue")
-	//           .attr("r", 5)
-	//     })
 })
 
 
