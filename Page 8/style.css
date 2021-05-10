@@ -1,9 +1,19 @@
+/*title*/
 h1 {
     position: absolute;
     top: 50px;
     left: 705px;
 }
 
+/*caption*/
+.caption {
+    position: absolute;
+    top: 750px;
+    left: 750px;
+    font-size: 13px;
+}
+
+/*position for each player's pic and info*/
 .paschall {
     position: absolute;
     top: 150px;
@@ -45,5 +55,6 @@ p {
     top: -130px;
     left: 103px;
 }
+
 
 
